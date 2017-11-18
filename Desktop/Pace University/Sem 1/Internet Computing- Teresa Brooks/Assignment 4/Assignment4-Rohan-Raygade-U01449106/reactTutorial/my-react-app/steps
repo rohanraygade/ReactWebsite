@@ -1,0 +1,8 @@
+install in terminal for gulp files:
+1.sudo npm install -g gulp
+2. sudo npm install sass
+3. sudo npm link gulp
+4. npm install --savegulp-install
+5. sudo npm install gulp-sass --save-dev
+6. sudo npm install --save-dev gulp-changed
+7. npm i --dev---save react-router-dom

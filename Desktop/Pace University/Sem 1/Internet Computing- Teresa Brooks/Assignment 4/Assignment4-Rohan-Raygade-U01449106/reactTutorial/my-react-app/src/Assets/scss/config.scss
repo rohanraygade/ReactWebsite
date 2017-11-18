@@ -1,0 +1,57 @@
+
+
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+$lightblue: #ADD8E6;
+$blue: #0000FF;
+
+
+@mixin translateY($e) {
+-webkit-transform: translateY($e);
+-moz-transform: translateY($e);
+transform: translateY($e);
+}
+
+@mixin transition($e) {
+-webkit-transition: $e;
+-moz-transition: $e;
+transition: $e;
+}
+
+body{
+font-family: 'Open Sans',sans-serif;
+font-size: 18px;
+color: $black;
+font-weight: 400;
+font-style: normal;
+}
+
+a{
+text-decoration:none;
+@include translateY(.4s ease-in-out);
+cursor: pointer;
+
+&:hover {
+color: $red;
+@include transition(.4s ease-in-out);
+}}
+
+.container-fluid{
+  line-height: 24px;
+  float: left;
+  width: 85%;
+  background: $lightblue;
+  height: 480px;
+  padding-top: 30px;
+}
+.nav{																																																																																																																																																																																																																																																																																																																																																																																																																					
+  line-height: 24px;
+  float: right;
+  width: 15%;
+}
+
+
+
